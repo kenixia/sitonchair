@@ -1,0 +1,45 @@
+footer {
+  display: flex;
+  justify-content: center;
+  @include tablet {
+    width: 100%;
+    height: 100px;
+  }
+  .container {
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+      margin-top: 40px;
+      justify-content: space-between;
+      align-content: center;
+    }
+    div {
+      color: silver;
+      margin-bottom: 10px;
+    }
+  }
+  .footer__section {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    @include tablet {
+      margin: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    p {
+      display: flex;
+      align-self: center;
+      margin-left: 15px;
+      color: silver;
+      span {
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.container {
+  width: 100vw;
+  @include tablet {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+input, textarea{
+  width: 90%;
+  resize: none;
+  margin: 20px auto;
+  display: block;
+  font-size: 20px;
+  padding: 10px 5px;
+  border: 1px solid $color-addons;
+  @include tablet {
+    width: 100%;
+  }
+
+  &::placeholder {
+    font-weight: lighter;
+  color: silver;
+  }
+
+}
+
+button {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  width: 40%;
+  background: $color-addons;
+  padding: 5px 0;
+  border-radius: 5px;
+  color: white;
+}

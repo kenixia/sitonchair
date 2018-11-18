@@ -1,0 +1,15 @@
+$radius-size: 6px;
+@mixin shadow{
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+@mixin tablet {
+  @media all and (min-width: 740px){
+    @content;
+  }
+}
+@mixin desktop {
+  @media all and (min-width: 980px){
+    @content;
+  }
+}
